@@ -1,0 +1,91 @@
+body {
+    background-image: url(image/bg.png);
+    font-family: 'UnifrakturCook', cursive;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-shadow: white 0 0 3px;
+}
+
+#block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 680px;
+    height: 680px;
+    padding: 10px;
+    background-image: linear-gradient(-110deg, #244974, #6b93c8);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.fixation {
+    position: relative;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #b42d44;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.square img {
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.square.open img {
+    display: block;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
