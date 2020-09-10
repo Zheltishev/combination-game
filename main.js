@@ -3,6 +3,8 @@ let square = document.querySelectorAll('.square')
 let array = ['eldar', 'haos', 'imperium', 'inquisition', 'mechanicus', 'necrons', 'orc', 'tyranids', 
 'eldar', 'haos', 'imperium', 'inquisition', 'mechanicus', 'necrons', 'orc', 'tyranids']
 let checkArray = []
+let close = document.querySelector('.close'),
+	windowEnd = document.querySelector('.window-end')
 
 //перемешивание алгоритмом Фишера-Йетса (https://habr.com/ru/post/358094/)
 function shuffle(arr){
@@ -77,7 +79,7 @@ function createField(){
 					if (square[k].classList.contains('match'))
 					num++
 					if (num == 16){
-						alert('you win')
+						windowEnd.classList.remove('none')
 
 						block.innerHTML = ''
 						createField()
@@ -90,4 +92,15 @@ function createField(){
 }
 
 createField()
+
+
+close.addEventListener('click', function(){
+	windowEnd.classList.add('none')
+})
+
+
+
+
+
+
 

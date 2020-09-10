@@ -1,6 +1,8 @@
 body {
   background-image: url(image/bg.png);
   font-family: 'UnifrakturCook', cursive;
+  margin: 0;
+  padding: 0;
 }
 
 .wrap {
@@ -84,5 +86,69 @@ h1 {
     width: 70px;
     height: 70px;
   }
+}
+
+.window-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.end-image {
+  padding: 20px;
+}
+
+.end-image img {
+  width: 400px;
+}
+
+.end-text {
+  font-size: 50px;
+  text-shadow: white 0 0 3px;
+  padding: 30px;
+}
+
+.end-text p {
+  margin: 10px;
+}
+
+.close {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.close img {
+  width: 70px;
+  height: 70px;
+}
+
+.close img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: ease 0.3s;
+  -webkit-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  -ms-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+}
+
+.none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
